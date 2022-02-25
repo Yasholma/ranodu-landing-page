@@ -1,0 +1,248 @@
+:root {
+  --textFont: "Courier Prime", monospace;
+  --headerFont: "El Messiri", sans-serif;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --mainBgColor: #e5e5e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--textFont);
+  background: var(--mainBgColor);
+  color: var(--blackColor);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--blackColor);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.content-md {
+  padding: 5rem 0;
+}
+
+/* header */
+.header {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.header .navbar {
+  background: transparent;
+  padding: 3rem 0 2rem 1rem;
+}
+
+.header .nav-item:not(:last-child) {
+  margin-right: 1.4rem;
+  position: relative;
+}
+
+.header .navbar-brand {
+  color: var(--blackColor);
+  font-weight: bold;
+  font-family: var(--textFont);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: -0.8rem;
+}
+
+.header .navbar-brand:hover {
+  transform: scale(1.5);
+}
+
+.btn-waitlist-primary {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+  border-radius: 1.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: background, transform 0.4s ease-in-out;
+}
+
+.btn-waitlist-primary:hover {
+  border: 1px solid var(--blackColor);
+  background: transparent;
+  color: var(--blackColor);
+  transform: translateX(4px);
+}
+
+.hero {
+  text-align: center;
+  background-image: url("../images/hero-desktop-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 55rem;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.hero-heading {
+  font-family: var(--headerFont);
+  font-weight: bold;
+  font-size: 7.75rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.45rem;
+}
+
+.hero-text {
+  font-family: var(--textFont);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 30px;
+  width: 50%;
+  margin: 2.5rem auto 5rem;
+  opacity: 0.7;
+  letter-spacing: -0.0625rem;
+}
+
+.naira-vector,
+.phone-vector {
+  position: absolute;
+}
+
+.naira-vector {
+  top: 3rem;
+  right: 0;
+}
+
+.phone-vector {
+  bottom: 10rem;
+  left: 0;
+}
+
+.custom-input {
+  display: flex;
+  width: 50%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.custom-input .form-control {
+  border-radius: 1.9rem;
+  background: transparent;
+  padding: 1.8rem 0.5rem;
+  border-color: #aaa;
+}
+
+.btn-custom {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+}
+
+.arrows-vector {
+  position: absolute;
+  bottom: -3rem;
+  right: -4rem;
+}
+
+.customers {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 2.3rem 0;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.customer-text {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.time-span {
+  position: relative;
+}
+
+.time-vector {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+}
+
+.order-content {
+  position: relative;
+}
+
+.order-line-vector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.order-card {
+  margin: 5rem 0;
+  padding: 0 3rem;
+}
+
+.order-number {
+  font-size: 1.7rem;
+}
+
+.order-header {
+  font-family: var(--headerFont);
+  margin: 0.3rem 0 1rem;
+  font-size: 2rem;
+}
+
+.order-text {
+  color: var(--blackColor);
+  font-size: 1.2rem;
+  opacity: 0.5;
+  line-height: 1.8rem;
+  letter-spacing: -1.25px;
+}
+
+.footer {
+  padding: 3rem 0 8rem;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-arrow-vector {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-text {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: -1px;
+  width: 50%;
+  margin: 2.5rem auto;
+}
