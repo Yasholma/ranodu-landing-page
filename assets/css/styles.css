@@ -45,6 +45,10 @@ ul {
   padding: 5rem 0;
 }
 
+.hide {
+  display: none;
+}
+
 /* header */
 .header {
   width: 100%;
@@ -139,6 +143,10 @@ ul {
 .phone-vector {
   bottom: 10rem;
   left: 0;
+}
+
+.md-hidden {
+  display: none;
 }
 
 .custom-input {
@@ -245,4 +253,126 @@ ul {
   letter-spacing: -1px;
   width: 50%;
   margin: 2.5rem auto;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    min-height: 90vh;
+  }
+
+  .hero {
+    background-image: url("../images/hero-mobile-bg.svg");
+    min-height: 15rem;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero-content {
+    padding: 5rem 0 3rem;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: initial;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    font-size: 1.11rem;
+    line-height: 1.4;
+    margin: 7rem auto 2rem;
+    opacity: 0.4;
+  }
+
+  .naira-vector {
+    top: -1rem;
+    width: 80px;
+  }
+
+  .phone-vector {
+    bottom: 19rem;
+    left: -47px;
+    width: 98px;
+  }
+
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .custom-input {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .arrows-vector,
+  .sm-hidden,
+  .order-line-vector {
+    display: none;
+  }
+
+  .btn-custom.md-hidden {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .btn-custom.md-hidden:hover {
+    transform: translateX(3px);
+  }
+
+  .btn-custom.md-hidden:hover:focus {
+    outline: none;
+  }
+
+  .customer-text {
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .time-vector {
+    width: 65px;
+  }
+
+  .order-card {
+    margin: 1.5rem 0;
+  }
+
+  .footer {
+    padding: 3rem 0;
+  }
+
+  .footer-text {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero-heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .custom-input {
+    width: 95%;
+  }
+
+  .customer-text {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .order-card {
+    padding: 0 1rem;
+  }
+
+  .footer-text {
+    font-size: 1.3rem;
+  }
 }
