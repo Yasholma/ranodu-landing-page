@@ -70,7 +70,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="btn btn-waitlist-primary" href="#"
+                <a class="btn btn-waitlist-primary" id="waitlist-btn" href="#"
                   >Join the waitlist</a
                 >
               </li>
@@ -102,23 +102,27 @@
 
             <p class="md-hidden hero-mobile-text">Join the waitlist</p>
 
-            <form class="waitlist-form">
+            <form
+              action="https://formspree.io/f/mqknbajl"
+              method="post"
+              class="waitlist-form"
+            >
               <div class="custom-input">
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="email-top"
                   class="form-control"
                   placeholder="Your email"
                 />
-                <button type="button" class="btn-custom md-hidden">
+                <button type="submit" class="btn-custom md-hidden">
                   <img
                     src="./assets/images/mobile-arrow.svg"
                     alt="Mobile Arrow"
                   />
                 </button>
                 <button
-                  type="button"
+                  type="submit"
                   class="btn-custom sm-hidden btn-waitlist-primary"
                 >
                   Join the waitlist
@@ -221,12 +225,16 @@
             We can’t wait to show you what we’re working on
           </p>
 
-          <form class="waitlist-form">
+          <form
+            action="https://formspree.io/f/mqknbajl"
+            method="post"
+            class="waitlist-form"
+          >
             <div class="custom-input">
               <input
                 type="email"
                 name="email"
-                id="email"
+                id="email-bottom"
                 class="form-control"
                 placeholder="Your email"
               />
@@ -237,7 +245,7 @@
                 />
               </button>
               <button
-                type="button"
+                type="submit"
                 class="btn-custom sm-hidden btn-waitlist-primary"
               >
                 Join the waitlist
@@ -275,18 +283,12 @@
 
     <!-- page script -->
     <script>
-      $(function () {
-        $(".hero-img-container").hover3d({
-          selector: ".hero-img",
-          shine: true,
-          sensitivity: 10,
-        });
-      });
-
       AOS.init();
     </script>
 
+    <!-- SMTP -->
+    <script src="./assets/js/smtp.js"></script>
     <!-- Custom Js -->
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
